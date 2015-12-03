@@ -3,20 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Moments of the Life</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 	<header>
 		<h1>Moments of the Life</h1>
-		<nav>
-			<ul>
-				<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="{{site.baseurl}}/news.html">News</a></li>
-			</ul>
-		</nav>
+		{% include nav.html navclass='nav-top' %}
 	</header>
 
+	{{content}}
 
-{{content}}
-
+	<footer>
+		{% include nav.html navclass='nav-bottom' %}
+		<p>Copyright 2015 Moments of the Life</p>
+	</footer>
 </body>
 </html>
